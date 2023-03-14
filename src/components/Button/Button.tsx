@@ -9,7 +9,10 @@ const Button = (props: ButtonProps) => {
 
 const ButtonCompoment = styled.button`
   font-size: 30px;
-  background-color: 'rgb(30, 165, 76)';
+  background-color: #34f93b; 
+  border-radius: 40px;
+  border-width: 0px;
+  padding: 10px;
 `;
 
 export default Button;

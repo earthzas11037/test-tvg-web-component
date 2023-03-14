@@ -3,22 +3,35 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/earthzas11037"
   },
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "A simple template for a custom React component library",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "Alex Eagleson",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.21.0",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "8.3.3",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
     "@types/react": "^17.0.34",
     "@types/styled-components": "4.4.1",
+    "babel-loader": "^8.3.0",
     "babel-plugin-styled-components": "^2.0.7",
     "postcss": "^8.4.21",
-    "react": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rollup": "^2.60.0",
     "rollup-plugin-dts": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
