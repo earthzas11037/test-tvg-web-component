@@ -5,6 +5,8 @@ import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
 import createStyledComponentsTransformer from 'typescript-plugin-styled-components';
 import styled from 'styled-components';
+import { terser } from "rollup-plugin-terser";
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 const styledComponentsTransformer = createStyledComponentsTransformer({
   displayName: true,
@@ -29,10 +31,12 @@ export default [
       },
     ],
     plugins: [
+      peerDepsExternal(),
       resolve(),
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss(),
+      terser(),
     ],
   },
   {
