@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/earthzas11037"
   },
-  "version": "0.0.1",
+  "version": "0.0.15",
   "description": "A simple template for a custom React component library",
   "scripts": {
     "rollup": "rollup -c"
@@ -15,16 +15,25 @@
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "8.3.3",
     "@types/react": "^17.0.34",
+    "@types/styled-components": "4.4.1",
+    "babel-plugin-styled-components": "^2.0.7",
+    "postcss": "^8.4.21",
     "react": "^17.0.2",
     "rollup": "^2.60.0",
-    "rollup-plugin-dts": "^4.0.1",
+    "rollup-plugin-dts": "^5.2.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.34.1",
     "tslib": "^2.5.0",
-    "typescript": "^4.4.4"
+    "typescript": "^4.4.4",
+    "typescript-plugin-styled-components": "^2.0.0"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
-  "type": "module"
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "styled-components": "4.4.1"
+  }
 }
